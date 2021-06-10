@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Adamina&family=Roboto:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+img {
+  width: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Adamina", serif;
+  font-size: 11em;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.6em;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+a, p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+span {
+  font-family: "Abel", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body .nav-container {
+  height: 4rem;
+  width: 100vw;
+  background: #468FCC;
+  position: fixed;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .nav-container > * {
+  margin: 0 2rem;
+}
+
+body .nav-container h1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 2.61em;
+}
+
+body .nav-container h1 span {
+  display: none;
+}
+
+body .nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+body .nav-container ul li a {
+  color: #1b374f;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body .container section:nth-child(2n-1) {
+  background: #4D9DE0;
+  color: white;
+}
+
+body .container #game h2, body .container #game p {
+  text-align: end;
+  margin: 0 2rem;
+}
+
+body .container #game h2 {
+  font-size: 1.61em;
+  font-weight: bold;
+}
+
+body .container #fases {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 0;
+  gap: 1em;
+}
+
+body .container #fases .showcase {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 0 7px 0 gray;
+          box-shadow: 2px 0 7px 0 gray;
+}
+
+body .container #fases .showcase .sc-info {
+  padding: 1em;
+}
+
+body .container #fases .showcase .sc-info h2, body .container #fases .showcase .sc-info p {
+  text-align: end;
+}
+
+body .container #fases .showcase img {
+  width: 30%;
+  height: 30%;
+}
+
+body .container #fases .showcase:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+body .container #fases .showcase:nth-child(2n) h2, body .container #fases .showcase:nth-child(2n) p {
+  text-align: start;
+}
+
+body .container #us {
+  padding: 2em 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 1em;
+}
+
+body .container #us .card {
+  min-width: 10em;
+  height: 10em;
+  padding: 2em;
+  margin: 0 2em;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px 4px rgba(27, 55, 79, 0.5);
+          box-shadow: 4px 4px 10px 4px rgba(27, 55, 79, 0.5);
+}
+
+body .container #us .card img {
+  width: 7em;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+body .container #us .card h3 {
+  color: #1b374f;
+}
+
+body .container #us .card span {
+  color: black;
+}
+
+@media (min-width: 800px) {
+  body .nav-container {
+    width: 70vw;
+    border-bottom-right-radius: 1em;
+  }
+  body .nav-container > * {
+    margin: 0 2rem;
+  }
+  body .container #game {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    background: none;
+  }
+  body .container #game > div {
+    height: 100vh;
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #4D9DE0;
+  }
+  body .container #game > div > * {
+    margin-right: 20rem;
+  }
+  body .container #game svg {
+    width: 30em;
+    height: 30em;
+    position: relative;
+    margin-left: -15em;
+  }
+  body .container #us {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */

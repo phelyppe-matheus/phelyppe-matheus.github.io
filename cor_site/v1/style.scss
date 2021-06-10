@@ -1,0 +1,245 @@
+$dark-blue: #1b374f;
+$strong-blue: #468FCC;
+$light-blue: #4D9DE0;
+$strong-red: #931F1D;
+$yellow: #F2E863;
+
+$title: 'Adamina', serif;
+$typo: 'Roboto', sans-serif;
+$alert: 'Abel', sans-serif;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Adamina&family=Roboto:wght@400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+img {
+    width: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: $title;
+    font-size: 11em;
+}
+
+h2 {
+    font-family: $typo;
+    font-size: 2.6em;
+}
+
+h3 {
+    font-family: $typo;
+    font-weight: 900;
+}
+
+a, p {
+    font-family: $typo;
+    font-weight: 400;
+}
+
+span {
+    font-family: $alert;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    .nav-container {
+        height: 4rem;
+        width: 100vw;
+
+        background: $strong-blue;
+
+        position: fixed;
+        z-index: 10;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &>*{
+            margin: 0 2rem;
+        }
+
+        h1 {
+            height: fit-content;
+            color: white;
+            font-size: 2.61em;
+            span {
+                display: none;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            li {
+                a {
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            min-height: 100vh;
+
+            &:nth-child(2n-1){
+                background: $light-blue;
+                color: white;
+                
+            }
+
+        }
+
+        #game {
+            h2, p {
+                text-align: end;
+                margin: 0 2rem;
+            }
+
+            h2 {
+                font-size: 1.61em;
+                font-weight: bold;
+            }
+        }
+
+        #fases {
+            flex-direction: column;
+            padding: 2em 0;
+            gap: 1em;
+
+            .showcase {
+                max-width: 1000px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                box-shadow: 2px 0 7px 0 gray;
+
+                .sc-info {
+                    padding: 1em;
+                    
+                    h2, p {
+                        text-align: end;
+                    }
+                }
+
+                img {
+                    width: 30%;
+                    height: 30%;
+                }
+
+                &:nth-child(2n) {
+                    flex-direction: row-reverse;
+
+                    h2, p {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        #us {
+            padding: 2em 0;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 1em;
+
+            .card {
+                min-width: 10em;
+                height: 10em;
+                padding: 2em;
+                margin: 0 2em;
+
+                background: white;
+                border-radius: 10px;
+                box-shadow: 4px 4px 10px 4px rgba($color: $dark-blue, $alpha: 0.5);
+                
+                img{
+                    width: 7em;
+                    border-radius: 50%;
+                    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+                }
+
+                h3 {
+                    color: $dark-blue;
+                }
+
+                span {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 800px) {
+    body {
+        .nav-container {
+            width: 70vw;
+            border-bottom-right-radius: 1em;
+
+            &>*{
+                margin: 0 2rem;
+            }
+        }
+
+        .container{
+            #game {
+                justify-content: start;
+                background: none;
+
+                &>div {
+                    height: 100vh;
+                    width: 70vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background: $light-blue;
+
+                    &>* {
+                        margin-right: 20rem;
+                    }
+                }
+
+                svg {
+                    width: 30em;
+                    height: 30em;
+                    position: relative;
+                    margin-left: -15em;
+                }
+            }
+
+            #us {
+                flex-direction: row;
+            }
+        }
+    }
+}
