@@ -6,10 +6,6 @@
   font-size: 16px;
 }
 
-img {
-  width: 30px;
-}
-
 ul {
   list-style-type: none;
 }
@@ -142,10 +138,10 @@ body .container #fases .showcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -153,28 +149,12 @@ body .container #fases .showcase {
           box-shadow: 2px 0 7px 0 gray;
 }
 
-body .container #fases .showcase .sc-info {
-  padding: 1em;
-}
-
-body .container #fases .showcase .sc-info h2, body .container #fases .showcase .sc-info p {
-  text-align: end;
-}
-
 body .container #fases .showcase img {
-  width: 30%;
-  height: 30%;
+  width: 100vw;
 }
 
-body .container #fases .showcase:nth-child(2n) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-body .container #fases .showcase:nth-child(2n) h2, body .container #fases .showcase:nth-child(2n) p {
-  text-align: start;
+body .container #fases .showcase .sc-info {
+  padding: 2em;
 }
 
 body .container #us {
@@ -252,6 +232,27 @@ body .container #us .card span {
     height: 30em;
     position: relative;
     margin-left: -15em;
+  }
+  body .container #fases .showcase {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container #fases .showcase .sc-info {
+    padding: 1em;
+  }
+  body .container #fases .showcase .sc-info h2, body .container #fases .showcase .sc-info p {
+    text-align: end;
+  }
+  body .container #fases .showcase:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .container #fases .showcase:nth-child(2n) h2, body .container #fases .showcase:nth-child(2n) p {
+    text-align: start;
   }
   body .container #us {
     -webkit-box-orient: horizontal;
