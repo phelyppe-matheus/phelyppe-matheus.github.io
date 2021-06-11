@@ -201,7 +201,13 @@ body .container #us .card span {
     border-bottom-right-radius: 1em;
   }
   body .nav-container > * {
-    margin: 0 2rem;
+    margin: 0 10vw;
+  }
+  body .nav-container .menu {
+    width: 30vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .container #game {
     -webkit-box-pack: start;

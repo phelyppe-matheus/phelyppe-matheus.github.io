@@ -191,7 +191,12 @@ body {
             border-bottom-right-radius: 1em;
 
             &>*{
-                margin: 0 2rem;
+                margin: 0 10vw;
+            }
+
+            .menu {
+                width: 30vw;
+                justify-content: space-between;
             }
         }
 
