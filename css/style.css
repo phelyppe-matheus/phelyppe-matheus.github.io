@@ -74,35 +74,35 @@ Orbit by Phelyppe Matheus
 Free stuff, but I'd like a shoutout nonetheless
 Have a nice day
 */
-.orbit-animation {
+.orbit-section {
   background: linear-gradient(45deg, blueviolet, blue);
   overflow: hidden;
   display: grid;
   place-items: center;
   height: min(100vh, 60rem);
 }
-.orbit-animation .orbit {
+.orbit-section .orbit {
   height: 25rem;
   aspect-ratio: 1/1;
 }
-.orbit-animation .orbit .image-center {
+.orbit-section .orbit .image-center {
   transform: translate(7.5rem, 7.5rem);
 }
-.orbit-animation .orbit .image-center .user {
+.orbit-section .orbit .image-center .user {
   position: absolute;
   height: 10rem;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
 }
-.orbit-animation .orbit .image-center .user:nth-child(2) {
+.orbit-section .orbit .image-center .user:nth-child(2) {
   filter: opacity(1);
   transition: filter 500ms ease-in;
 }
-.orbit-animation .orbit .image-center .user:nth-child(2):hover {
+.orbit-section .orbit .image-center .user:nth-child(2):hover {
   filter: opacity(0);
 }
-.orbit-animation .orbit .floating-list .floating-item {
+.orbit-section .orbit .floating-list .floating-item {
   background-color: aliceblue;
   position: absolute;
   padding: 1.5rem;
@@ -113,73 +113,73 @@ Have a nice day
   border-radius: 50%;
   transition: transform 100ms, box-shadow 400ms;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(6) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(6) {
   animation: orbit-horizontal 10s ease-in-out 0s infinite, orbit-vertical 10s ease-in-out 2.5s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(6):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(6):hover {
   background-color: var(--brown-dark);
   color: var(--brown-light);
   box-shadow: inset 4px 4px 4px var(--brown-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(5) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(5) {
   animation: orbit-horizontal 10s ease-in-out 1.6666666667s infinite, orbit-vertical 10s ease-in-out 4.1666666667s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(5):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(5):hover {
   background-color: var(--yellow-dark);
   color: var(--yellow-light);
   box-shadow: inset 4px 4px 4px var(--yellow-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(4) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(4) {
   animation: orbit-horizontal 10s ease-in-out 3.3333333333s infinite, orbit-vertical 10s ease-in-out 5.8333333333s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(4):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(4):hover {
   background-color: var(--purple-dark);
   color: var(--purple-light);
   box-shadow: inset 4px 4px 4px var(--purple-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(3) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(3) {
   animation: orbit-horizontal 10s ease-in-out 5s infinite, orbit-vertical 10s ease-in-out 7.5s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(3):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(3):hover {
   background-color: var(--orange-dark);
   color: var(--orange-light);
   box-shadow: inset 4px 4px 4px var(--orange-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(2) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(2) {
   animation: orbit-horizontal 10s ease-in-out 6.6666666667s infinite, orbit-vertical 10s ease-in-out 9.1666666667s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(2):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(2):hover {
   background-color: var(--blue-dark);
   color: var(--blue-light);
   box-shadow: inset 4px 4px 4px var(--blue-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(1) {
+.orbit-section .orbit .floating-list .floating-item:nth-child(1) {
   animation: orbit-horizontal 10s ease-in-out 8.3333333333s infinite, orbit-vertical 10s ease-in-out 10.8333333333s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(1):hover {
+.orbit-section .orbit .floating-list .floating-item:nth-child(1):hover {
   background-color: var(--green-dark);
   color: var(--green-light);
   box-shadow: inset 4px 4px 4px var(--green-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item .description {
+.orbit-section .orbit .floating-list .floating-item .description {
   display: none;
   font-size: 0.5rem;
   font-family: "Fauna One", serif;
   font-weight: bold;
   text-align: center;
 }
-.orbit-animation .orbit .floating-list .floating-item:hover {
+.orbit-section .orbit .floating-list .floating-item:hover {
   background-color: aqua;
   padding: 0.5rem;
   transform: scale(1.5);
 }
-.orbit-animation .orbit .floating-list .floating-item:hover .item {
+.orbit-section .orbit .floating-list .floating-item:hover .item {
   display: none;
 }
-.orbit-animation .orbit .floating-list .floating-item:hover .description {
+.orbit-section .orbit .floating-list .floating-item:hover .description {
   display: block;
 }
-.orbit-animation .orbit .floating-list:hover .floating-item {
+.orbit-section .orbit .floating-list:hover .floating-item {
   animation-play-state: paused;
 }
 
@@ -191,5 +191,14 @@ Have a nice day
 @keyframes orbit-vertical {
   50% {
     margin-top: 20rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .orbit-section .orbit {
+    position: absolute;
+    right: -7.5rem;
+  }
+  .orbit-section .orbit .image-center .user {
+    border-radius: 50% 0 0 50%;
   }
 }
