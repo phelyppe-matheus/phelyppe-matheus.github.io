@@ -113,21 +113,29 @@ Have a nice day
   border-radius: 50%;
   transition: transform 100ms, box-shadow 400ms;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(1) {
+.orbit-animation .orbit .floating-list .floating-item:nth-child(6) {
+  animation: orbit-horizontal 10s ease-in-out 0s infinite, orbit-vertical 10s ease-in-out 2.5s infinite;
+}
+.orbit-animation .orbit .floating-list .floating-item:nth-child(6):hover {
+  background-color: var(--brown-dark);
+  color: var(--brown-light);
+  box-shadow: inset 4px 4px 4px var(--brown-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
+}
+.orbit-animation .orbit .floating-list .floating-item:nth-child(5) {
   animation: orbit-horizontal 10s ease-in-out 1.6666666667s infinite, orbit-vertical 10s ease-in-out 4.1666666667s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(1):hover {
-  background-color: var(--green-dark);
-  color: var(--green-light);
-  box-shadow: inset 4px 4px 4px var(--green-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
+.orbit-animation .orbit .floating-list .floating-item:nth-child(5):hover {
+  background-color: var(--yellow-dark);
+  color: var(--yellow-light);
+  box-shadow: inset 4px 4px 4px var(--yellow-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(2) {
+.orbit-animation .orbit .floating-list .floating-item:nth-child(4) {
   animation: orbit-horizontal 10s ease-in-out 3.3333333333s infinite, orbit-vertical 10s ease-in-out 5.8333333333s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(2):hover {
-  background-color: var(--blue-dark);
-  color: var(--blue-light);
-  box-shadow: inset 4px 4px 4px var(--blue-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
+.orbit-animation .orbit .floating-list .floating-item:nth-child(4):hover {
+  background-color: var(--purple-dark);
+  color: var(--purple-light);
+  box-shadow: inset 4px 4px 4px var(--purple-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
 .orbit-animation .orbit .floating-list .floating-item:nth-child(3) {
   animation: orbit-horizontal 10s ease-in-out 5s infinite, orbit-vertical 10s ease-in-out 7.5s infinite;
@@ -137,29 +145,21 @@ Have a nice day
   color: var(--orange-light);
   box-shadow: inset 4px 4px 4px var(--orange-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(4) {
+.orbit-animation .orbit .floating-list .floating-item:nth-child(2) {
   animation: orbit-horizontal 10s ease-in-out 6.6666666667s infinite, orbit-vertical 10s ease-in-out 9.1666666667s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(4):hover {
-  background-color: var(--purple-dark);
-  color: var(--purple-light);
-  box-shadow: inset 4px 4px 4px var(--purple-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
+.orbit-animation .orbit .floating-list .floating-item:nth-child(2):hover {
+  background-color: var(--blue-dark);
+  color: var(--blue-light);
+  box-shadow: inset 4px 4px 4px var(--blue-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(5) {
+.orbit-animation .orbit .floating-list .floating-item:nth-child(1) {
   animation: orbit-horizontal 10s ease-in-out 8.3333333333s infinite, orbit-vertical 10s ease-in-out 10.8333333333s infinite;
 }
-.orbit-animation .orbit .floating-list .floating-item:nth-child(5):hover {
-  background-color: var(--yellow-dark);
-  color: var(--yellow-light);
-  box-shadow: inset 4px 4px 4px var(--yellow-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
-}
-.orbit-animation .orbit .floating-list .floating-item:nth-child(6) {
-  animation: orbit-horizontal 10s ease-in-out 10s infinite, orbit-vertical 10s ease-in-out 12.5s infinite;
-}
-.orbit-animation .orbit .floating-list .floating-item:nth-child(6):hover {
-  background-color: var(--brown-dark);
-  color: var(--brown-light);
-  box-shadow: inset 4px 4px 4px var(--brown-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
+.orbit-animation .orbit .floating-list .floating-item:nth-child(1):hover {
+  background-color: var(--green-dark);
+  color: var(--green-light);
+  box-shadow: inset 4px 4px 4px var(--green-light), inset -4px -4px 4px rgba(0, 0, 0, 0.4666666667), 4px 4px 15px rgba(0, 0, 0, 0.4666666667);
 }
 .orbit-animation .orbit .floating-list .floating-item .description {
   display: none;
