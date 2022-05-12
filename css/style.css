@@ -13,6 +13,10 @@
   font: inherit;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
@@ -67,8 +71,6 @@ picture {
   --pink-dark: #6e2f74;
   --white-light: hsl(0deg, 0%, 100%);
   --white-dark: #999999;
-  --violet-to-blue: linear-gradient(45deg, blueviolet, blue);
-  --on-violet-to-blue: #f0f8ff;
 }
 
 /*
@@ -77,20 +79,18 @@ Free stuff, but I'd like a shoutout nonetheless
 Have a nice day
 */
 .orbit-section {
-  background: var(--violet-to-blue);
-  height: 45.3553390593rem;
+  background: radial-gradient(at top left, rgb(98, 135, 168), transparent), radial-gradient(at top right, blue, transparent), radial-gradient(at bottom left, red, transparent);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 4rem 2rem;
   gap: 4rem;
   position: relative;
-  padding: 4rem;
 }
 .orbit-section .about {
   padding: 3rem;
-  border-radius: 2rem;
   max-width: 50rem;
   display: flex;
   flex-direction: column;
@@ -98,14 +98,14 @@ Have a nice day
   text-align: center;
 }
 .orbit-section .about .title {
-  color: var(--on-violet-to-blue);
+  color: #ffffff;
   font-family: "Cinzel", serif;
   font-weight: 400;
   font-size: 2.6em;
 }
 .orbit-section .about .subtitle {
   margin-top: -0.5rem;
-  color: var(--on-violet-to-blue);
+  color: #ffffff;
   font-family: "Cinzel", serif;
   font-size: 1.6em;
   font-weight: 700;
@@ -114,11 +114,11 @@ Have a nice day
   margin-top: 1rem;
   font-family: "Fauna One";
   font-size: 1em;
-  color: var(--on-violet-to-blue);
+  color: #ffffff;
 }
 .orbit-section .about .text a {
   color: blue;
-  background-color: var(--on-violet-to-blue);
+  background-color: #ffffff;
   font-weight: bold;
   padding: 0rem 0.6rem 0.2rem;
   margin: 0 0.3rem;
@@ -131,13 +131,19 @@ Have a nice day
 .orbit-section .about .text a:active {
   background: var(--blue-light);
 }
-.orbit-section .orbit {
+.orbit-section .orbit-container {
+  height: 35.3553390593rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.orbit-section .orbit-container .orbit {
   position: relative;
   height: 25rem;
   width: 25rem;
-  border-radius: 50%;
 }
-.orbit-section .orbit .image-center {
+.orbit-section .orbit-container .orbit .image-center {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -145,7 +151,7 @@ Have a nice day
   align-items: center;
   justify-items: center;
 }
-.orbit-section .orbit .image-center .user {
+.orbit-section .orbit-container .orbit .image-center .user {
   position: absolute;
   height: 10rem;
   aspect-ratio: 1/1;
@@ -153,13 +159,13 @@ Have a nice day
   transition: filter 400ms linear;
   border-radius: 50%;
 }
-.orbit-section .orbit .image-center .user:nth-child(2):hover {
+.orbit-section .orbit-container .orbit .image-center .user:nth-child(2):hover {
   filter: opacity(0);
 }
-.orbit-section .orbit .floating-list {
+.orbit-section .orbit-container .orbit .floating-list {
   list-style: none;
 }
-.orbit-section .orbit .floating-list .floating-item {
+.orbit-section .orbit-container .orbit .floating-list .floating-item {
   position: absolute;
   height: 5rem;
   aspect-ratio: 1/1;
@@ -168,12 +174,12 @@ Have a nice day
   align-items: center;
   transition: all 400ms ease-in-out;
 }
-.orbit-section .orbit .floating-list .floating-item img {
+.orbit-section .orbit-container .orbit .floating-list .floating-item img {
   padding: 0.5rem;
   width: 5rem;
   transition: all 400ms ease-in-out;
 }
-.orbit-section .orbit .floating-list .floating-item .description {
+.orbit-section .orbit-container .orbit .floating-list .floating-item .description {
   position: relative;
   filter: opacity(0);
   text-align: center;
@@ -182,32 +188,32 @@ Have a nice day
   font-weight: 700;
   color: black;
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(6) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(6) {
   top: 0rem;
   left: 12.5rem;
   transform: translate(-50%, -50%);
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(5) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(5) {
   top: 6.25rem;
   left: 23.3253175473rem;
   transform: translate(-50%, -50%);
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(4) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(4) {
   top: 18.75rem;
   left: 23.3253175473rem;
   transform: translate(-50%, -50%);
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(3) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(3) {
   top: 25rem;
   left: 12.5rem;
   transform: translate(-50%, -50%);
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(2) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(2) {
   top: 18.75rem;
   left: 1.6746824527rem;
   transform: translate(-50%, -50%);
 }
-.orbit-section .orbit .floating-list .floating-item:nth-child(1) {
+.orbit-section .orbit-container .orbit .floating-list .floating-item:nth-child(1) {
   top: 6.25rem;
   left: 1.6746824527rem;
   transform: translate(-50%, -50%);
@@ -262,14 +268,29 @@ Have a nice day
 }
 @media screen and (max-width: 37.5rem) {
   .orbit-section {
-    padding: 2rem;
-    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
-  .orbit-section .orbit {
-    margin-left: -9.5rem;
-    place-self: start;
+  .orbit-section .about {
+    height: 100vh;
   }
-  .orbit-section .orbit .image-center .user {
+  .orbit-section .about .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .orbit-section .about .subtitle {
+    margin-top: 0.1rem;
+    font-size: 0.6rem;
+    font-weight: normal;
+  }
+  .orbit-section .orbit-container {
+    height: 100vh;
+    align-self: flex-start;
+    margin-left: calc(-50vh + 5rem);
+  }
+  .orbit-section .orbit-container .orbit .image-center .user {
     border-radius: 0 50% 50% 0;
   }
 }
@@ -281,6 +302,7 @@ Have a nice day
 }
 .intro {
   height: 100vh;
+  filter: saturate(0.5);
 }
 .intro .forest {
   position: absolute;
@@ -324,6 +346,15 @@ Have a nice day
   font-family: "Cinzel", serif;
   font-weight: bold;
 }
+.intro::after {
+  content: "";
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  box-sizing: content-box;
+  animation: nextSectionHint 2s ease-in-out 10s infinite;
+}
 
 @keyframes runningThroughTheForest {
   from {
@@ -339,5 +370,17 @@ Have a nice day
   }
   to {
     box-shadow: 0px 0px 0px rgba(255, 255, 255, 0) inset;
+  }
+}
+@keyframes nextSectionHint {
+  0%, 100% {
+    border-left: solid 3vh rgba(0, 0, 0, 0);
+    border-right: solid 3vh rgba(0, 0, 0, 0);
+    border-top: solid 3vh rgba(0, 0, 0, 0);
+  }
+  50% {
+    border-left: solid 8vh rgba(0, 0, 0, 0);
+    border-right: solid 8vh rgba(0, 0, 0, 0);
+    border-top: solid 8vh rgba(0, 0, 0, 0.4666666667);
   }
 }
