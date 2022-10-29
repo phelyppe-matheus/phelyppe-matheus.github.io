@@ -4,8 +4,6 @@
     height: 100vh;
     overflow-y: hidden;
 
-    background-color: #000000;
-
     background-image:
         url(/assets/pixel_art_forest/Layer_0000.png),
         url(/assets/pixel_art_forest/Layer_0001.png),
@@ -130,6 +128,7 @@
             }
 
             &.invite {
+                background-color: #000000e0;
                 background-image: linear-gradient(-55deg, #ffffff, #ffffff80 25%, #ffffff00 90%);
 
                 h1 {

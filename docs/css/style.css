@@ -49,7 +49,6 @@ input {
 .hero {
   height: 100vh;
   overflow-y: hidden;
-  background-color: #000000;
   background-image: url(/assets/pixel_art_forest/Layer_0000.png), url(/assets/pixel_art_forest/Layer_0001.png), url(/assets/pixel_art_forest/Layer_0002.png), url(/assets/pixel_art_forest/Layer_0003.png), url(/assets/pixel_art_forest/Layer_0004.png), url(/assets/pixel_art_forest/Layer_0005.png), url(/assets/pixel_art_forest/Layer_0006.png), url(/assets/pixel_art_forest/Layer_0007.png), url(/assets/pixel_art_forest/Layer_0008.png), url(/assets/pixel_art_forest/Layer_0009.png), url(/assets/pixel_art_forest/Layer_0010.png), url(/assets/pixel_art_forest/Layer_0011.png);
   background-repeat: repeat-x;
   background-size: auto 100vh;
@@ -130,6 +129,7 @@ input {
   font-size: 1.6rem;
 }
 .hero .menu .menu-card.invite {
+  background-color: rgba(0, 0, 0, 0.8784313725);
   background-image: linear-gradient(-55deg, #ffffff, rgba(255, 255, 255, 0.5019607843) 25%, rgba(255, 255, 255, 0) 90%);
 }
 .hero .menu .menu-card.invite h1 span {
@@ -166,5 +166,47 @@ input {
   }
   to {
     background-position-x: 936.1916771753vh, 936.1916771753vh, 585.1197982346vh, 585.1197982346vh, 585.1197982346vh, 468.0958385876vh, 351.0718789407vh, 351.0718789407vh, 351.0718789407vh, 351.0718789407vh, 117.0239596469vh, 117.0239596469vh;
+  }
+}
+body {
+  background-color: black;
+  background-image: radial-gradient(black 49px, transparent 49px), linear-gradient(0deg, transparent 98%, white 98%), linear-gradient(90deg, transparent 98%, white 98%);
+  background-size: 100px 100px, 100% 100px, 100px 100%;
+  background-repeat: repeat, repeat, repeat;
+  animation: backgroundShuffle 10s linear infinite;
+}
+
+@keyframes backgroundShuffle {
+  0% {
+    background-position: -50px -50px, 0 0, 0 0;
+  }
+  25% {
+    background-position: 50px -50px, 0 0, 0 0;
+  }
+  50% {
+    background-position: 50px 50px, 0 0, 0 0;
+  }
+  75% {
+    background-position: -50px 50px, 0 0, 0 0;
+  }
+  100% {
+    background-position: -50px 150px, 0 0, 0 0;
+  }
+}
+@keyframes backgroundShuffle2 {
+  0% {
+    background-position: 0 0, -50px -50px, -50px -50px;
+  }
+  25% {
+    background-position: 0 0, 50px -50px, 50px -50px;
+  }
+  50% {
+    background-position: 0 0, 50px 50px, 50px 50px;
+  }
+  75% {
+    background-position: 0 0, -50px 50px, -50px 50px;
+  }
+  100% {
+    background-position: 0 0, -50px 150px, -50px 150px;
   }
 }

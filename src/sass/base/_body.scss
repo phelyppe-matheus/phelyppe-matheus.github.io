@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    background-image:
+        radial-gradient(black 49px, transparent 49px),
+        linear-gradient(0deg, transparent 98%, white 98%),
+        linear-gradient(90deg, transparent 98%, white 98%),
+    ;
+
+    background-size: 100px 100px, 100% 100px, 100px 100%;
+    // background-position: -50px -50px, 0 0, 0 0;
+    background-repeat: repeat, repeat, repeat;
+
+    animation: backgroundShuffle 10s linear infinite;
+}
+
+@keyframes backgroundShuffle {
+    0%{
+        background-position: -50px -50px, 0 0, 0 0;
+    }
+    25% {
+        background-position: 50px -50px, 0 0, 0 0;
+    }
+    50% {
+        background-position: 50px 50px, 0 0, 0 0;
+    }
+    75% {
+        background-position: -50px 50px, 0 0, 0 0;
+    }
+    100% {
+        background-position: -50px 150px, 0 0, 0 0;
+    }
+}
+
+
+@keyframes backgroundShuffle2 {
+    0%{
+        background-position: 0 0, -50px -50px, -50px -50px;
+    }
+    25% {
+        background-position: 0 0, 50px -50px, 50px -50px;
+    }
+    50% {
+        background-position: 0 0, 50px 50px, 50px 50px;
+    }
+    75% {
+        background-position: 0 0, -50px 50px, -50px 50px;
+    }
+    100% {
+        background-position: 0 0, -50px 150px, -50px 150px;
+    }
+}
