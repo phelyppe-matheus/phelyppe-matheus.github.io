@@ -98,6 +98,7 @@ input {
   scale: 0.8;
   background-color: #ae5eb5;
   box-shadow: 16px 16px 4px 4px rgba(63, 12, 68, 0.5019607843);
+  z-index: 1;
 }
 .hero .menu {
   position: fixed;
